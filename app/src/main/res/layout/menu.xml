@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/blue_200">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignBaseline="@id/slow"
+        android:layout_margin="40dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Speed:" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignBaseline="@id/sensor_mode"
+        android:layout_margin="40dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Option:" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MENU"
+        android:textSize="72sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/slow" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/slow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="slow mode"
+        android:layout_centerInParent="true"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/pink_100" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fast mode"
+        android:layout_centerInParent="true"
+        android:layout_alignLeft="@+id/slow"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/pink_100"
+        android:layout_marginStart="130dp" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/sensor_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/slow"
+        android:layout_margin="60dp"
+        android:text="sensor"
+        android:layout_centerInParent="true"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/pink_100" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/arrows_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignBaseline="@id/sensor_mode"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_above="@id/fast"
+        android:textColor="@color/black"
+        android:text="Arrows"
+        android:backgroundTint="@color/pink_100" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/recordsList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RECORDS"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/sensor_mode"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/pink_100"
+        />
+</RelativeLayout>
