@@ -9,7 +9,7 @@ import android.util.Log;
 import com.example.assignment2.Interfeces.MoveCallback;
 
 public class MoveDetector {
-    private static final double MOVE_DIFFERENCE = 5.0;
+    private static final double MOVE_DIFFERENCE = 6.0;
     private SensorManager sensorManager;
     private Sensor sensor;
     private SensorEventListener sensorEventListener;
